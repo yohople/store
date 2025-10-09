@@ -1,12 +1,11 @@
 import React from 'react'
 
-function AboutPage() {
-
+function Hero() {
   return (
     <div>
-      bout
+      Hero
     </div>
   )
 }
 
-export default AboutPage
+export default Hero

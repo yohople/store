@@ -1,12 +1,11 @@
 import React from 'react'
 
-function AboutPage() {
-
+function EmptyList() {
   return (
     <div>
-      bout
+      emptylist
     </div>
   )
 }
 
-export default AboutPage
+export default EmptyList
