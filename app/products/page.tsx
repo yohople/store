@@ -1,10 +1,11 @@
+import ProductsContainer from '@/components/products/ProductsContainer'
 import React from 'react'
 
-function ProductPage() {
+function ProductPage({searchParams}:{searchParams:{layout?:string, search?:string}}) {
+  const layout = searchParams.layout || "grid"
+  const search = searchParams.search || ""
   return (
-    <div>
-      products
-    </div>
+    <ProductsContainer layout={layout} search={search} />
   )
 }
 
