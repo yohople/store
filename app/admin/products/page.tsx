@@ -14,7 +14,7 @@ import { deleteProductAction, fetchAdminProducts } from "@/utils/action";
 import { formatCurrency } from "@/utils/format";
 import Link from "next/link";
 
-export async function AdminProductsPage() {
+async function AdminProductsPage() {
   const items = await fetchAdminProducts();
   if(items.length === 0){
     return <EmptyList />
