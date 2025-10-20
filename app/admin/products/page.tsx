@@ -6,7 +6,6 @@ import {
   TableBody,
   TableCaption,
   TableCell,
-  TableFooter,
   TableHead,
   TableHeader,
   TableRow,
@@ -14,7 +13,6 @@ import {
 import { deleteProductAction, fetchAdminProducts } from "@/utils/action";
 import { formatCurrency } from "@/utils/format";
 import Link from "next/link";
-import { id } from "zod/v4/locales";
 
 export async function AdminProductsPage() {
   const items = await fetchAdminProducts();
@@ -38,7 +36,7 @@ export async function AdminProductsPage() {
         {items.map((item) => {
           const { id, name, company, price } = item;
           return (
-            <TableRow>
+            <TableRow key={id}>
               <TableCell>
                 <Link
                   href={`/products/${id}`}
