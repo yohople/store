@@ -1,11 +1,11 @@
 import React from 'react'
 
-function AdminPage() {
+function SalesPage() {
   return (
     <div>
-      admin
+      salespage
     </div>
   )
 }
 
-export default AdminPage
+export default SalesPage
