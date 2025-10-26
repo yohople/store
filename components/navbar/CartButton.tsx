@@ -2,10 +2,11 @@ import React from 'react'
 import { Button } from '../ui/button'
 import Link from 'next/link';
 import { FaCartArrowDown } from "react-icons/fa";
+import { fetchCartItems } from '@/utils/action';
 
 
-function CartButton() {
-  const itemsInCart = 9
+async function CartButton() {
+  const itemsInCart = await fetchCartItems()
   return (
     <Button variant="outline" size="icon" className='flex items-center justify-center relative'>
       <Link href="/cart">

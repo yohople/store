@@ -1,7 +1,7 @@
 import React from "react";
 import HeroCarousel from "./HeroCarousel";
-import { Button } from '@/components/ui/button';
-import Link from 'next/link';
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 function Hero() {
   return (
@@ -11,12 +11,16 @@ function Hero() {
           we are changing the way people shop
         </h1>
         <p className="max-w-xl mt-8 text-lg leading-8 text-muted-foreground">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam quibusdam beatae corporis?
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo odit nostrum unde.
+          Discover the perfect blend of style, quality, and convenience right at
+          your fingertips. Whether you’re upgrading your home, refreshing your
+          wardrobe, or finding the perfect gift, we bring the best products
+          straight to your door. Enjoy effortless shopping, exclusive deals, and
+          fast, reliable delivery that makes every purchase a delight. Shop
+          smart, live better, and experience shopping the way it should be
         </p>
         <Button size="lg" className="mt-10">
-        <Link href="/products">Products</Link>
-          </Button>
+          <Link href="/products">Products</Link>
+        </Button>
       </div>
       <HeroCarousel />
     </section>
