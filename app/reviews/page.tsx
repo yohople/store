@@ -14,11 +14,11 @@ async function ReviewsPage() {
     <>
       <SectionTitle title='your reviews'/>
       <section className='grid md:grid-cols-2 gap-8 mt-4'>
-        {reviews.map((review)=>{
+        {reviews.map((review,index)=>{
           const {rating, comment} = review
           const {name, image} = review.product
           const reviewInfo = {rating, comment, name, image}
-          return <ReviewCard reviewInfo={reviewInfo}>
+          return <ReviewCard reviewInfo={reviewInfo} key={index}>
               <DeleteReview reviewId={review.id}/>
           </ReviewCard>
         })}
